@@ -45,3 +45,6 @@ Please set the JAVA environment proxy credentials using a similar code :
     System.setProperty("https.proxyUserName", "exampleUsername");
     System.setProperty("https.proxyPassword", "examplePassword");
 ```
+
+
+modification to README.md file
