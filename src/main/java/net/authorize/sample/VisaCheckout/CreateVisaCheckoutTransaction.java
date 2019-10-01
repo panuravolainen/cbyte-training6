@@ -41,7 +41,7 @@ public class CreateVisaCheckoutTransaction {
         
 
     //Common code to set for all requests
- 		ApiOperationBase.setEnvironment(Environment.SANDBOX);
+ 		ApiOperationBase.setEnvironment(Environment.BOX);
 
  		MerchantAuthenticationType merchantAuthenticationType  = new MerchantAuthenticationType() ;
 		merchantAuthenticationType.setName(apiLoginId);
@@ -66,6 +66,12 @@ public class CreateVisaCheckoutTransaction {
     apiRequest.setTransactionRequest(txnRequest);
     CreateTransactionController controller = new CreateTransactionController(apiRequest);
     controller.execute();
+
+    
+    // CreateTransactionRequest apiRequest = new CreateTransactionRequest();
+    // apiRequest.setTransactionRequest(txnRequest);
+    // CreateTransactionController controller = new CreateTransactionController(apiRequest);
+    // controller.execute();
 
 	
 	
